@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<h1>count home page</h1>
+{{fulltext}}has total {{word_count}} words
+{{listof}}
+<h1><a href={% url 'home' %}>Try again</a></h1>
+{% for k,v in listof %}
+<h3>{{ k }} -> {{v}}</h3>
+<br/>
+{% endfor %}
+<h1 <a href={% url 'home' %}>start again</a></h1>
+</html>
